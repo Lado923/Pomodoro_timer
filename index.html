@@ -6,10 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/tomato.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Pomodoro timer 🍅</title>
 </head>
 <body>
-    
+    <h1>Pomodoro ⏱️ with 🔔</h1>
+    <div class="clock">
+        <div class="mins">0</div>
+        <div class="colon">:</div>
+        <div class="secs">00</div>
+        <audio src="assets/service-bell_daniel_simion-1.mp3"></audio>
+    <svg class="progress-ring" heigh="120" width="120">
+        <circle class="progress-ring__circle" stroke-with="8" fill="transparent" r="50" cx="60" cy="60">
+    </svg>
+    </div>
+
+    <div class="btn-group">
+        <button class="start">focus</button>
+        <button class="reset">reset</button>
+        <button class="pause">pause</button>
+    </div>
+
+    <form action=".">
+        <input type="number" value="1" id="focus-time">
+        <input type="number" value="1" id="break-time">
+        <button type="submit">save settings</button>
+    </form>
+
+
+
+
 <script src="main.js"></script>
 </body>
 </html>
